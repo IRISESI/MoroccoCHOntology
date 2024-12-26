@@ -1,0 +1,536 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.onto-mch.org/2024/"
+     xml:base="http://www.onto-mch.org/2024/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:www="http://www.onto-mch.org/2024#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.onto-mch.org/2024"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.onto-mch.org/2024#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-mch.org/2024#locatedIn">
+        <rdfs:domain rdf:resource="http://www.onto-mch.org/2024#Monument"/>
+        <rdfs:range rdf:resource="http://www.onto-mch.org/2024#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.onto-mch.org/2024#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.onto-mch.org/2024#hasName">
+        <rdfs:domain rdf:resource="http://www.onto-mch.org/2024#Monument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Basin -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#Basin">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#HydraulicWorksAndSystems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Cemetry -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#Cemetry">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#FuneraryMonument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Church -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#Church">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#WorshipPlace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Cinema -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#Cinema">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#MonumentWithModernArchitecture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#City -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#City"/>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#DefensiveWall -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#DefensiveWall">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#MilitaryAndDefensiveMonument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#DomesticMonument -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#DomesticMonument">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#Monument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Fortress -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#Fortress">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#MilitaryAndDefensiveMonument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Fountain -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#Fountain">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#PublicBuildingsAndFacilities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#FuneraryMonument -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#FuneraryMonument">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#Monument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Garden -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#Garden">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#GardenAndGreenSpace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#GardenAndGreenSpace -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#GardenAndGreenSpace">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#Monument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#HistoricalReligiousMonument -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#HistoricalReligiousMonument">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#Monument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Hotel -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#Hotel">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#PublicBuildingsAndFacilities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#House -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#House">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#DomesticMonument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#HydraulicWorksAndSystems -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#HydraulicWorksAndSystems">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#Monument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Medersa -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#Medersa">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#TeachingPlace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#MilitaryAndDefensiveMonument -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#MilitaryAndDefensiveMonument">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#Monument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Monument -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#Monument"/>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#MonumentWithModernArchitecture -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#MonumentWithModernArchitecture">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#Monument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Mosque -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#Mosque">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#WorshipPlace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Msid -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#Msid">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#TeachingPlace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Parc -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#Parc">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#GardenAndGreenSpace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#PublicBuildingsAndFacilities -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#PublicBuildingsAndFacilities">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#Monument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#School -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#School">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#MonumentWithModernArchitecture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#TeachingPlace -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#TeachingPlace">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#HistoricalReligiousMonument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Tomb -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#Tomb">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#FuneraryMonument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Well -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#Well">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#HydraulicWorksAndSystems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#WorshipPlace -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#WorshipPlace">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#HistoricalReligiousMonument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#ksar -->
+
+    <owl:Class rdf:about="http://www.onto-mch.org/2024#ksar">
+        <rdfs:subClassOf rdf:resource="http://www.onto-mch.org/2024#DomesticMonument"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Cinéma_Royal -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Cinéma_Royal">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#Cinema"/>
+        <www:locatedIn rdf:resource="http://www.onto-mch.org/2024#Rabat"/>
+        <www:hasName xml:lang="fr">Cinéma Royal</www:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Dar_Si_Issa -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Dar_Si_Issa">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#House"/>
+        <www:locatedIn rdf:resource="http://www.onto-mch.org/2024#Safi"/>
+        <www:hasName xml:lang="fr">Dar Si Issa</www:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Ecole_Chaouki -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Ecole_Chaouki">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#School"/>
+        <www:locatedIn rdf:resource="http://www.onto-mch.org/2024#Kénitra"/>
+        <www:hasName xml:lang="fr">Ecole Chaouki</www:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Eglise_Portugaise -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Eglise_Portugaise">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#Church"/>
+        <www:locatedIn rdf:resource="http://www.onto-mch.org/2024#Safi"/>
+        <www:hasName xml:lang="fr">Eglise Portugaise</www:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Essaouira -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Essaouira">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Hôtel_Europe -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Hôtel_Europe">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#Hotel"/>
+        <www:locatedIn rdf:resource="http://www.onto-mch.org/2024#Kénitra"/>
+        <www:hasName xml:lang="fr">Hotel Europe</www:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Jardin_Botanique -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Jardin_Botanique">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#Garden"/>
+        <www:locatedIn rdf:resource="http://www.onto-mch.org/2024#Rabat"/>
+        <www:hasName xml:lang="fr">Jardin Botanique</www:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Jardin_Nouzhat_Hassan -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Jardin_Nouzhat_Hassan">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#Garden"/>
+        <www:locatedIn rdf:resource="http://www.onto-mch.org/2024#Rabat"/>
+        <www:hasName xml:lang="fr">Jardin Nouzhat Hassan</www:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Kénitra -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Kénitra">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Les_murailles_de_Mogador -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Les_murailles_de_Mogador">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#DefensiveWall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Marrakech -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Marrakech">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Mosquée_Moulina -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Mosquée_Moulina">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#Mosque"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Mosquée_de_Hassan -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Mosquée_de_Hassan">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#Mosque"/>
+        <www:locatedIn rdf:resource="http://www.onto-mch.org/2024#Rabat"/>
+        <www:hasName xml:lang="fr">Mosquée de Hassan</www:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Mosquée_de_la_Koutoubia -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Mosquée_de_la_Koutoubia">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#Mosque"/>
+        <www:locatedIn rdf:resource="http://www.onto-mch.org/2024#Marrakech"/>
+        <www:hasName xml:lang="fr">Mosqu\ée de la Koutoubia</www:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Muraille_du_site_Chellah -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Muraille_du_site_Chellah">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#DefensiveWall"/>
+        <www:locatedIn rdf:resource="http://www.onto-mch.org/2024#Rabat"/>
+        <www:hasName xml:lang="fr">Muraille du site Chellah</www:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Médersa_Moulay_Youssef -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Médersa_Moulay_Youssef">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#Medersa"/>
+        <www:locatedIn rdf:resource="http://www.onto-mch.org/2024#Marrakech"/>
+        <www:hasName xml:lang="fr">Médersa Moulay Youssef</www:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Palais_Bahia -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Palais_Bahia">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#ksar"/>
+        <www:locatedIn rdf:resource="http://www.onto-mch.org/2024#Marrakech"/>
+        <www:hasName xml:lang="fr">Palais Bahia</www:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Quechla_de_Safi -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Quechla_de_Safi">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#Fortress"/>
+        <www:locatedIn rdf:resource="http://www.onto-mch.org/2024#Safi"/>
+        <www:hasName xml:lang="fr">Quechla de Safi</www:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Rabat -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Rabat">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Safi -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Safi">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Sqqaıa_Bab_Doukkala -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Sqqaıa_Bab_Doukkala">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#Fountain"/>
+        <www:locatedIn rdf:resource="http://www.onto-mch.org/2024#Marrakech"/>
+        <www:hasName xml:lang="fr">Sqqaıa Bab Doukkala</www:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Sragna -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Sragna">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Kasbah_d&apos;Oudaya -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Kasbah_d&apos;Oudaya">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#Fortress"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.onto-mch.org/2024#Murailles_de_l&apos;Andalous -->
+
+    <owl:NamedIndividual rdf:about="http://www.onto-mch.org/2024#Murailles_de_l&apos;Andalous">
+        <rdf:type rdf:resource="http://www.onto-mch.org/2024#DefensiveWall"/>
+        <www:locatedIn rdf:resource="http://www.onto-mch.org/2024#Rabat"/>
+        <www:hasName xml:lang="fr">Murailles de l&apos;Andalous</www:hasName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
