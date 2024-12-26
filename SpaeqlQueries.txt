@@ -1,0 +1,12 @@
+CQ1. SELECT distinct ?monumentClass  WHERE { ?monumentClass  a owl:Class. 
+          ?monumentClass rdfs:subClassOf onto:Monument} 
+CQ2. Here we chose to query for the defensive walls.
+SELECT   ?monument 	WHERE { ?monument rdf:type  onto:DefensiveWall}
+CQ3. We supposed that we are looking for the type of the monument 
+called 'Quechla de Safi'
+SELECT  distinct ?monumentType WHERE {?x onto:hasName "Quechla de Safi"@fr.
+                     ?x  rdf:type ?monumentType }     
+CQ4. We supposed that we are looking for the location of the 
+monument 'Palais Bahia'
+SELECT  ?location WHERE {?x  onto:hasName "Palais Bahia"@fr.
+           ?x  onto:locatedIn  ?location}
